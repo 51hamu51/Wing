@@ -690,10 +690,11 @@ GameObject:
   - component: {fileID: 1797678066}
   - component: {fileID: 1797678065}
   - component: {fileID: 1797678064}
+  - component: {fileID: 1797678069}
   - component: {fileID: 1797678063}
-  - component: {fileID: 1797678062}
   - component: {fileID: 1797678061}
-  m_Layer: 13
+  - component: {fileID: 1797678062}
+  m_Layer: 23
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MomentumTransferMethod: 0
-  DisallowTheft: 1
+  DisallowTheft: 0
   ExactGun: {fileID: 0}
   ExactGrip: {fileID: 0}
   allowManipulationWhenEquipped: 0
@@ -890,12 +891,25 @@ Transform:
   m_GameObject: {fileID: 1797678060}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.52, y: 1.64, z: 35.47}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 43.23, y: 1.64, z: 46.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797678069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797678060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1783056023, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowCollisionOwnershipTransfer: 1
 --- !u!1 &1838194724
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +923,8 @@ GameObject:
   - component: {fileID: 1838194726}
   - component: {fileID: 1838194725}
   - component: {fileID: 1838194730}
-  - component: {fileID: 1838194729}
   - component: {fileID: 1838194731}
+  - component: {fileID: 1838194729}
   m_Layer: 22
   m_Name: Ball
   m_TagString: Untagged

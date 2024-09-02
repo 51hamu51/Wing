@@ -25,4 +25,5 @@ public class cube_udon : UdonSharpBehaviour
             }
         }
     }
+
 }
