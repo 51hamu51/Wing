@@ -4,8 +4,11 @@ using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 
+
 public class BallUdon : UdonSharpBehaviour
 {
+
+    public Env Env;
     void Start()
     {
 
