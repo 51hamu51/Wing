@@ -8,6 +8,9 @@
     },
     "com.vrchat.worlds": {
       "version": "3.6.1"
+    },
+    "net.kwxxw.yama-stream": {
+      "version": "1.4.9"
     }
   },
   "locked": {
@@ -23,6 +26,12 @@
       "version": "3.6.1",
       "dependencies": {
         "com.vrchat.base": "3.6.1"
+      }
+    },
+    "net.kwxxw.yama-stream": {
+      "version": "1.4.9",
+      "dependencies": {
+        "com.vrchat.worlds": ">=3.6.0"
       }
     }
   }
