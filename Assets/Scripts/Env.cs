@@ -17,5 +17,7 @@ public class Env : UdonSharpBehaviour
     public bool[] TatgetOnNumber = new bool[10];
     public float ResetDistance = 3.0f;
     public float KickerFieldDistance = 2.0f;
+    public GameObject PINS;
+    public Transform Sweeper;
 
 }
