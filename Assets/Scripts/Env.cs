@@ -7,8 +7,9 @@ using VRC.Udon;
 public class Env : UdonSharpBehaviour
 {
 
-    public string BBall = "FieldBall";
+    public string BBall = "BowlingBall";
     public string SBall = "FieldBall";
+    public string FBall = "FieldBall";
     public float KickForce = 9.0f;
     public float KickForceUp = 5.0f;
     public float KickForceRotate = 3.0f;

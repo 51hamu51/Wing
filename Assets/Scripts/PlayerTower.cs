@@ -20,7 +20,7 @@ public class PlayerTower : UdonSharpBehaviour
     {
 
         objName = other.gameObject.name;
-        if (objName == Env.BBall)
+        if (objName == Env.BBall || objName == Env.FBall)
         {
             Debug.Log(objName);
             Rigidbody rigidbody = other.GetComponent<Rigidbody>();
