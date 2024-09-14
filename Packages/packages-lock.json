@@ -216,6 +216,12 @@
         "com.unity.ai.navigation": "1.1.5"
       }
     },
+    "net.kwxxw.yama-stream": {
+      "version": "file:net.kwxxw.yama-stream",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
