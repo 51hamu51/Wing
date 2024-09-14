@@ -20,4 +20,6 @@ public class Env : UdonSharpBehaviour
     public GameObject PINS;
     public Transform Sweeper;
 
+    public GameObject PinPoint;
+
 }
