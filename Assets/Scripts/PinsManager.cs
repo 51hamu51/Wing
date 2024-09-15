@@ -10,9 +10,11 @@ public class PinsManager : UdonSharpBehaviour
 
 
     public GameObject Pins;
+    private int x;
 
     void Start()
     {
+        x = 0;
         Env Env;
         GameObject obj = GameObject.Find("Environment");
         Env = obj.GetComponent<Env>();
@@ -27,7 +29,7 @@ public class PinsManager : UdonSharpBehaviour
     }
     void Update()
     {
-        int x = 0;
+        x = 0;
         Env Env;
         GameObject obj = GameObject.Find("Environment");
         Env = obj.GetComponent<Env>();
@@ -43,6 +45,7 @@ public class PinsManager : UdonSharpBehaviour
         }
         if (x == 10)
         {
+            x = 0;
             Env.PinStand = false;
             Destroy(Pins);
         }
