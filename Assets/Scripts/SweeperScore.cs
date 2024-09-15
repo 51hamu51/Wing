@@ -24,6 +24,18 @@ public class SweeperScore : UdonSharpBehaviour
             x += Env.BowlingScoreAll[i];
         }
         Env.BowlingScoreAll[21] = x;
-        Env.SweeperScoreText.text = string.Format("{0} {1} / {2} {3} / {4} {5} / {6} {7} / {8} {9} / {10} {11} / {12} {13} / {14} {15} / {16} {17} / {18} {19} {20} \n  sum: {21}     order:{22}", Env.BowlingScoreAll[0], Env.BowlingScoreAll[1], Env.BowlingScoreAll[2], Env.BowlingScoreAll[3], Env.BowlingScoreAll[4], Env.BowlingScoreAll[5], Env.BowlingScoreAll[6], Env.BowlingScoreAll[7], Env.BowlingScoreAll[8], Env.BowlingScoreAll[9], Env.BowlingScoreAll[10], Env.BowlingScoreAll[11], Env.BowlingScoreAll[12], Env.BowlingScoreAll[13], Env.BowlingScoreAll[14], Env.BowlingScoreAll[15], Env.BowlingScoreAll[16], Env.BowlingScoreAll[17], Env.BowlingScoreAll[18], Env.BowlingScoreAll[19], Env.BowlingScoreAll[20], Env.BowlingScoreAll[21], Env.BowlingOrder + 1);
+        int flame = (Env.BowlingOrder + 2) / 2;
+        int OneTwo = ((Env.BowlingOrder + 1) % 2) * -1 + 2;
+        if (Env.BowlingOrder == 20)
+        {
+            flame = 10;
+            OneTwo = 3;
+        }
+        Env.SweeperScoreText.text = string.Format("{0} {1} / {2} {3} / {4} {5} / {6} {7} / {8} {9} / {10} {11} / {12} {13} / {14} {15} / {16} {17} / {18} {19} {20} \n  sum: {21}     order:{22}-{23}", Env.BowlingScoreAll[0], Env.BowlingScoreAll[1], Env.BowlingScoreAll[2], Env.BowlingScoreAll[3], Env.BowlingScoreAll[4], Env.BowlingScoreAll[5], Env.BowlingScoreAll[6], Env.BowlingScoreAll[7], Env.BowlingScoreAll[8], Env.BowlingScoreAll[9], Env.BowlingScoreAll[10], Env.BowlingScoreAll[11], Env.BowlingScoreAll[12], Env.BowlingScoreAll[13], Env.BowlingScoreAll[14], Env.BowlingScoreAll[15], Env.BowlingScoreAll[16], Env.BowlingScoreAll[17], Env.BowlingScoreAll[18], Env.BowlingScoreAll[19], Env.BowlingScoreAll[20], Env.BowlingScoreAll[21], flame, OneTwo);
+        if (Env.BowlingOrder >= 21)
+        {
+            Env.SweeperScoreText.text = string.Format("{0} {1} / {2} {3} / {4} {5} / {6} {7} / {8} {9} / {10} {11} / {12} {13} / {14} {15} / {16} {17} / {18} {19} {20} \n  sum: {21}     order: finish!!", Env.BowlingScoreAll[0], Env.BowlingScoreAll[1], Env.BowlingScoreAll[2], Env.BowlingScoreAll[3], Env.BowlingScoreAll[4], Env.BowlingScoreAll[5], Env.BowlingScoreAll[6], Env.BowlingScoreAll[7], Env.BowlingScoreAll[8], Env.BowlingScoreAll[9], Env.BowlingScoreAll[10], Env.BowlingScoreAll[11], Env.BowlingScoreAll[12], Env.BowlingScoreAll[13], Env.BowlingScoreAll[14], Env.BowlingScoreAll[15], Env.BowlingScoreAll[16], Env.BowlingScoreAll[17], Env.BowlingScoreAll[18], Env.BowlingScoreAll[19], Env.BowlingScoreAll[20], Env.BowlingScoreAll[21], flame, OneTwo);
+
+        }
     }
 }
