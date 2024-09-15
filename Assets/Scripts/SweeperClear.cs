@@ -25,27 +25,67 @@ public class SweeperClear : UdonSharpBehaviour
 
 
                 base.InputDrop(value, args);
-                for (int i = 1; i < 11; i++)
+                if (Env.BowlingOrder == 21)
                 {
-                    if (Env.PinStandNumber[i] == false && Env.PinDestroyNumber[i] == false)
-                    {
-                        Env.BowlingScore++;
-                        GameObject obj = GameObject.Find("BowlingPin" + i);
-                        Destroy(obj);
-                        Env.PinDestroyNumber[i] = true;
-                    }
+                    Debug.Log("finish");
                 }
-
-                Env.BowlingScoreAll[Env.BowlingOrder] = Env.BowlingScore;
-                Env.BowlingOrder++;
-                Env.BowlingScore = 0;
-                if (Env.BowlingOrder % 2 == 0)
+                else if (Env.BowlingOrder == 19 && Env.BowlingScoreAll[18] != 10)
                 {
-
-                    //Env.PinStand = false;
+                    for (int i = 1; i < 11; i++)
+                    {
+                        if (Env.PinStandNumber[i] == false && Env.PinDestroyNumber[i] == false)
+                        {
+                            Env.BowlingScore++;
+                            GameObject obj = GameObject.Find("BowlingPin" + i);
+                            Destroy(obj);
+                            Env.PinDestroyNumber[i] = true;
+                        }
+                    }
+                    Env.BowlingScoreAll[Env.BowlingOrder] = Env.BowlingScore;
+                    Env.BowlingOrder += 2;
+                    Env.BowlingScore = 0;
                     Env.BowlingResetDestroy = true;
+                }
+                else if (Env.BowlingOrder == 19)
+                {
+                    for (int i = 1; i < 11; i++)
+                    {
+                        if (Env.PinStandNumber[i] == false && Env.PinDestroyNumber[i] == false)
+                        {
+                            Env.BowlingScore++;
+                            GameObject obj = GameObject.Find("BowlingPin" + i);
+                            Destroy(obj);
+                            Env.PinDestroyNumber[i] = true;
+                        }
+                    }
+                    Env.BowlingScoreAll[Env.BowlingOrder] = Env.BowlingScore;
+                    Env.BowlingOrder++;
+                    Env.BowlingScore = 0;
+
+                }
+                else
+                {
+                    for (int i = 1; i < 11; i++)
+                    {
+                        if (Env.PinStandNumber[i] == false && Env.PinDestroyNumber[i] == false)
+                        {
+                            Env.BowlingScore++;
+                            GameObject obj = GameObject.Find("BowlingPin" + i);
+                            Destroy(obj);
+                            Env.PinDestroyNumber[i] = true;
+                        }
+                    }
+
+                    Env.BowlingScoreAll[Env.BowlingOrder] = Env.BowlingScore;
+                    Env.BowlingOrder++;
+                    Env.BowlingScore = 0;
+                    if (Env.BowlingOrder % 2 == 0)
+                    {
 
 
+                        Env.BowlingResetDestroy = true;
+
+                    }
                 }
             }
         }
