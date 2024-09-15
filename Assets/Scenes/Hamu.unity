@@ -751,6 +751,86 @@ MonoBehaviour:
   IwaSync3PlayList: {fileID: 0}
   KienlPlayList: {fileID: 0}
   YouTubePlayListID: 
+--- !u!1001 &301830244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 735281155995213101, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 735281155995213101, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+    - target: {fileID: 3868262661711002145, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_Name
+      value: DigitalClock_Miki_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383681700447874422, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501188965681541189, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+        type: 3}
+      propertyPath: serializedProgramAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f88902b87e3c6194caa2c4fe9bc7694b,
+        type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5832f92ff49f9194c88183c2b3e8eb15, type: 3}
 --- !u!1001 &307626808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7561,6 +7641,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 906293062}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1537766875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5195802797963431763, guid: 5832f92ff49f9194c88183c2b3e8eb15,
+    type: 3}
+  m_PrefabInstance: {fileID: 301830244}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1538738904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3102876752496482648, guid: 2674f268860583949b53b63df24489ea,
@@ -10729,7 +10815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 48.1, y: 2.42}
+  m_AnchoredPosition: {x: 48.29, y: 1.72}
   m_SizeDelta: {x: 1101, y: 546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3231720197660963110
@@ -10877,10 +10963,14 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 2100000, guid: 6812e96a38fedc6408a3ac0d6a690f8c, type: 2}
+  - {fileID: 2100000, guid: 960a4ed7f7ccda741acedefe4125447b, type: 2}
   - {fileID: -1936150240291098062, guid: 37470b2c0afbc4b62b99dd25433b0e46, type: 3}
   - {fileID: -1580535799172915004, guid: 37470b2c0afbc4b62b99dd25433b0e46, type: 3}
+  - {fileID: 2100000, guid: 8399eca75883fcf4b935ff323345b93f, type: 2}
+  - {fileID: 2100000, guid: 5a56356410718164f92d61c4fbbd53ff, type: 2}
+  - {fileID: 2100000, guid: c815f7613a04b724089c206857e57c6a, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6812e96a38fedc6408a3ac0d6a690f8c, type: 2}
   - {fileID: 2100000, guid: e86e7281176dae945bd655f34805ed55, type: 2}
   - {fileID: 2100000, guid: 3f13a5d1eb038764b804d1aabffed55f, type: 2}
   - {fileID: 2100000, guid: 419ae9fed5372564c995339c60fd7ebf, type: 2}
@@ -10901,8 +10991,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3889ddf2a4bd9346a4843eb47e0acb1, type: 2}
   - {fileID: 2100000, guid: b24ed807dd7dc224baf5390f46738647, type: 2}
   - {fileID: 2100000, guid: 51d72acecdb1ba249957953415f8e29b, type: 2}
-  - {fileID: 2100000, guid: 5a56356410718164f92d61c4fbbd53ff, type: 2}
-  - {fileID: 2100000, guid: c815f7613a04b724089c206857e57c6a, type: 2}
   - {fileID: 2100000, guid: c061036a22d1ec8458931379f75c3766, type: 2}
   - {fileID: 2100000, guid: da89b0b4080947a4c85f8fd3ae090394, type: 2}
   - {fileID: 2100000, guid: c1ca8265f68235c4bafaeb355fb8603d, type: 2}
@@ -11894,6 +11982,10 @@ MonoBehaviour:
     ID: 304
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 1537766875}
+    ID: 305
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   NavigationAreas: []
@@ -12029,3 +12121,4 @@ SceneRoots:
   - {fileID: 2076945474}
   - {fileID: 926804108}
   - {fileID: 1346960170}
+  - {fileID: 301830244}
