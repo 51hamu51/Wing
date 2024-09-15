@@ -3,6 +3,8 @@ using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
+using TMPro;
+
 
 public class Env : UdonSharpBehaviour
 {
@@ -26,5 +28,11 @@ public class Env : UdonSharpBehaviour
     public bool PinStand;
     public float PinDestHeight = 0.184f;
     public bool[] PinStandNumber = new bool[11];
+    public bool[] PinDestroyNumber = new bool[11];
+    public TextMeshProUGUI SweeperScoreText;
+    public int BowlingScore;
+    public int[] BowlingScoreAll = new int[22];
+    public int BowlingOrder;
+    public bool BowlingResetDestroy;
 
 }
