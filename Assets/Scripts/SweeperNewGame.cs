@@ -30,7 +30,7 @@ public class SweeperNewGame : UdonSharpBehaviour
                 Env.BowlingResetDestroy = true;
                 for (int i = 0; i < 22; i++)
                 {
-                    Env.BowlingScoreAll[i] = 99;
+                    Env.BowlingScoreAll[i] = 0;
                 }
             }
         }

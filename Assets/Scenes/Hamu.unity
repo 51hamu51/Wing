@@ -2470,7 +2470,7 @@ MonoBehaviour:
   PinDestroyNumber: 0000000000000000000000
   SweeperScoreText: {fileID: 420913417}
   BowlingScore: 0
-  BowlingScoreAll: 63000000630000006300000063000000630000006300000063000000630000006300000063000000630000006300000063000000630000006300000063000000630000006300000063000000630000006300000063000000
+  BowlingScoreAll: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   BowlingOrder: 0
   BowlingResetDestroy: 0
 --- !u!4 &752023572
@@ -11653,14 +11653,11 @@ MonoBehaviour:
   useAssignedLayers: 0
   DynamicPrefabs: []
   DynamicMaterials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 2100000, guid: 960a4ed7f7ccda741acedefe4125447b, type: 2}
+  - {fileID: 2100000, guid: 8399eca75883fcf4b935ff323345b93f, type: 2}
   - {fileID: -1936150240291098062, guid: 37470b2c0afbc4b62b99dd25433b0e46, type: 3}
   - {fileID: -1580535799172915004, guid: 37470b2c0afbc4b62b99dd25433b0e46, type: 3}
-  - {fileID: 2100000, guid: 8399eca75883fcf4b935ff323345b93f, type: 2}
-  - {fileID: 2100000, guid: 5a56356410718164f92d61c4fbbd53ff, type: 2}
-  - {fileID: 2100000, guid: c815f7613a04b724089c206857e57c6a, type: 2}
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 2100000, guid: 6812e96a38fedc6408a3ac0d6a690f8c, type: 2}
   - {fileID: 2100000, guid: e86e7281176dae945bd655f34805ed55, type: 2}
   - {fileID: 2100000, guid: 3f13a5d1eb038764b804d1aabffed55f, type: 2}
   - {fileID: 2100000, guid: 419ae9fed5372564c995339c60fd7ebf, type: 2}
@@ -11681,6 +11678,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b3889ddf2a4bd9346a4843eb47e0acb1, type: 2}
   - {fileID: 2100000, guid: b24ed807dd7dc224baf5390f46738647, type: 2}
   - {fileID: 2100000, guid: 51d72acecdb1ba249957953415f8e29b, type: 2}
+  - {fileID: 2100000, guid: 6812e96a38fedc6408a3ac0d6a690f8c, type: 2}
+  - {fileID: 2100000, guid: 5a56356410718164f92d61c4fbbd53ff, type: 2}
+  - {fileID: 2100000, guid: c815f7613a04b724089c206857e57c6a, type: 2}
   - {fileID: 2100000, guid: c061036a22d1ec8458931379f75c3766, type: 2}
   - {fileID: 2100000, guid: da89b0b4080947a4c85f8fd3ae090394, type: 2}
   - {fileID: 2100000, guid: c1ca8265f68235c4bafaeb355fb8603d, type: 2}
@@ -12674,6 +12674,14 @@ MonoBehaviour:
     - VRC.Udon.UdonBehaviour
   - gameObject: {fileID: 1537766875}
     ID: 305
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 902877611}
+    ID: 306
+    SerializedTypeNames:
+    - VRC.Udon.UdonBehaviour
+  - gameObject: {fileID: 1137951291}
+    ID: 307
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
