@@ -27,12 +27,25 @@ public class SweeperClear : UdonSharpBehaviour
                 base.InputDrop(value, args);
                 for (int i = 1; i < 11; i++)
                 {
-                    if (Env.PinStandNumber[i] == false)
+                    if (Env.PinStandNumber[i] == false && Env.PinDestroyNumber[i] == false)
                     {
-
+                        Env.BowlingScore++;
                         GameObject obj = GameObject.Find("BowlingPin" + i);
                         Destroy(obj);
+                        Env.PinDestroyNumber[i] = true;
                     }
+                }
+
+                Env.BowlingScoreAll[Env.BowlingOrder] = Env.BowlingScore;
+                Env.BowlingOrder++;
+                Env.BowlingScore = 0;
+                if (Env.BowlingOrder % 2 == 0)
+                {
+
+                    //Env.PinStand = false;
+                    Env.BowlingResetDestroy = true;
+
+
                 }
             }
         }

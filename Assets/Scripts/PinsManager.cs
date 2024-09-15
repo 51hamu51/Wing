@@ -49,6 +49,13 @@ public class PinsManager : UdonSharpBehaviour
             Env.PinStand = false;
             Destroy(Pins);
         }
+        if (Env.BowlingResetDestroy == true)
+        {
+
+
+            Destroy(Pins);
+
+        }
 
     }
 
