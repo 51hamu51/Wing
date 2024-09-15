@@ -11,6 +11,11 @@ public class BowlingPin : UdonSharpBehaviour
     private int PinNum;
     void Start()
     {
+        Env Env;
+        GameObject obj = GameObject.Find("Environment");
+        Env = obj.GetComponent<Env>();
+
+        Env.PinStandNumber[PinNum] = true;
 
     }
     void Update()
@@ -18,7 +23,8 @@ public class BowlingPin : UdonSharpBehaviour
         Env Env;
         GameObject obj = GameObject.Find("Environment");
         Env = obj.GetComponent<Env>();
-        if (this.transform.position.y < Env.PinDestHeight)
+        GameObject child = transform.GetChild(0).gameObject;
+        if (child.transform.position.y < Env.PinDestHeight)
         {
             Env.PinStandNumber[PinNum] = false;
         }
