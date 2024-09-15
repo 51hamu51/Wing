@@ -1843,7 +1843,7 @@ GameObject:
   - component: {fileID: 752023571}
   - component: {fileID: 752023570}
   m_Layer: 0
-  m_Name: Enviroment
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1911,6 +1911,9 @@ MonoBehaviour:
   PINS: {fileID: 7993484250001845744, guid: b24962fbc68f7964ab693c50f1b1eb19, type: 3}
   Sweeper: {fileID: 926804108}
   PinPoint: {fileID: 956973553}
+  PinStand: 1
+  PinDestHeight: 0.2
+  PinStandNumber: 0001010101010101010101
 --- !u!4 &752023572
 Transform:
   m_ObjectHideFlags: 0
@@ -3263,17 +3266,17 @@ PrefabInstance:
     - target: {fileID: 5921385292030813529, guid: 0ca92d0fbf2bf3944bfeef01f4977da5,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.503
       objectReference: {fileID: 0}
     - target: {fileID: 5921385292030813529, guid: 0ca92d0fbf2bf3944bfeef01f4977da5,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5921385292030813529, guid: 0ca92d0fbf2bf3944bfeef01f4977da5,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.503
       objectReference: {fileID: 0}
     - target: {fileID: 5928551390715969452, guid: 0ca92d0fbf2bf3944bfeef01f4977da5,
         type: 3}
@@ -3901,7 +3904,7 @@ Transform:
   m_GameObject: {fileID: 926804107}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.32, y: 0, z: 0}
+  m_LocalPosition: {x: -22.32, y: -0.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7746,17 +7749,17 @@ PrefabInstance:
     - target: {fileID: 842581146780459058, guid: ddf7f58d0d20d6843a79711f81f34bf2,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.549
       objectReference: {fileID: 0}
     - target: {fileID: 842581146780459058, guid: ddf7f58d0d20d6843a79711f81f34bf2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 842581146780459058, guid: ddf7f58d0d20d6843a79711f81f34bf2,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.549
       objectReference: {fileID: 0}
     - target: {fileID: 1114470929367522591, guid: ddf7f58d0d20d6843a79711f81f34bf2,
         type: 3}

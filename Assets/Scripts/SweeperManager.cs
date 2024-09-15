@@ -12,4 +12,13 @@ public class SweeperManager : UdonSharpBehaviour
         Vector3 PinPosition = Env.PinPoint.transform.position;
         Instantiate(Env.PINS, PinPosition, Quaternion.identity, Env.Sweeper);
     }
+    void Update()
+    {
+        if (Env.PinStand == false)
+        {
+
+            Vector3 PinPosition = Env.PinPoint.transform.position;
+            Instantiate(Env.PINS, PinPosition, Quaternion.identity, Env.Sweeper);
+        }
+    }
 }

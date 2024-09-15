@@ -22,5 +22,8 @@ public class Env : UdonSharpBehaviour
     public Transform Sweeper;
 
     public GameObject PinPoint;
+    public bool PinStand;
+    public float PinDestHeight = 0.2f;
+    public bool[] PinStandNumber = new bool[11];
 
 }
