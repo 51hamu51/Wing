@@ -2900,14 +2900,9 @@ MonoBehaviour:
   BowlingScoreAll: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   BowlingOrder: 0
   BowlingResetDestroy: 0
-  MemoryCardAlive: 010101
   MemoryCardFront: -1
   MemoryFirst: 1
   MemoryPoint: 0
-  MemoryMaterials:
-  - {fileID: 2100000, guid: 3b0f0de1ebf58f64a93dd63789e2b674, type: 2}
-  - {fileID: 2100000, guid: f053f699c0c17d543bb398143142e754, type: 2}
-  - {fileID: 2100000, guid: 7841f76677366af429c64d63e334239b, type: 2}
   MemoryDefaultMaterial: {fileID: 2100000, guid: a9430ba7de26e824082bf3bac74db0fa,
     type: 2}
   MemoryGameCards: {fileID: 8748384921791189359, guid: 91eef9d2fa7cfd448809763ab12d0328,
@@ -2916,6 +2911,14 @@ MonoBehaviour:
   MemoryGame: {fileID: 259277069}
   MemoryScoreText: {fileID: 955701571}
   MemoryNew: 0
+  MemoryCardAlive: 01010101
+  MemoryMaterials:
+  - {fileID: 2100000, guid: 3b0f0de1ebf58f64a93dd63789e2b674, type: 2}
+  - {fileID: 2100000, guid: f053f699c0c17d543bb398143142e754, type: 2}
+  - {fileID: 2100000, guid: 7841f76677366af429c64d63e334239b, type: 2}
+  - {fileID: 2100000, guid: 547d72bcb9527cc4b87b31c2237e896c, type: 2}
+  MemoryCardHowMany: 8
+  MemoryPictureNum: 0000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &752023572
 Transform:
   m_ObjectHideFlags: 0
