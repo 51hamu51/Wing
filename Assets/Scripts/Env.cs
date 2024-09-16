@@ -41,5 +41,8 @@ public class Env : UdonSharpBehaviour
     public int MemoryPoint;
     public Material[] MemoryMaterials = new Material[2];
     public Material MemoryDefaultMaterial;
+    public GameObject MemoryGameCards;
+    public GameObject CardPoint;
+    public Transform MemoryGame;
 
 }
