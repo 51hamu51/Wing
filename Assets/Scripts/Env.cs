@@ -20,6 +20,7 @@ public class Env : UdonSharpBehaviour
     public bool[] TatgetOnNumber = new bool[10];
     public float ResetDistance = 3.0f;
     public float SweeperClearDistance = 3.0f;
+    public float MemoryGameCardDistance = 2.0f;
     public float KickerFieldDistance = 2.0f;
     public GameObject PINS;
     public Transform Sweeper;
@@ -34,5 +35,11 @@ public class Env : UdonSharpBehaviour
     public int[] BowlingScoreAll = new int[22];
     public int BowlingOrder;
     public bool BowlingResetDestroy;
+    public bool[] MemoryCardAlive = new bool[2];
+    public int MemoryCardFront;
+    public bool MemoryFirst;
+    public int MemoryPoint;
+    public Material[] MemoryMaterials = new Material[2];
+    public Material MemoryDefaultMaterial;
 
 }
