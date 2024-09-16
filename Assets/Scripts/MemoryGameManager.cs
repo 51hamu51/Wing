@@ -14,15 +14,15 @@ public class MemoryGameManager : UdonSharpBehaviour
         Vector3 CardPosition = Env.CardPoint.transform.position;
         Instantiate(Env.MemoryGameCards, CardPosition, Quaternion.identity, Env.MemoryGame);
 
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < Env.MemoryCardHowMany; i++)
         {
             Env.MemoryPictureNum[i] = i / 2;
         }
-        int rnd1 = Random.Range(0, 6);
+        int rnd1 = Random.Range(2, 6);
         for (int j = 0; j < rnd1; j++)
         {
-            int rnd2 = Random.Range(0, 6);
-            int rnd3 = Random.Range(0, 6);
+            int rnd2 = Random.Range(0, Env.MemoryCardHowMany);
+            int rnd3 = Random.Range(0, Env.MemoryCardHowMany);
             temp = Env.MemoryPictureNum[rnd2];
             Env.MemoryPictureNum[rnd2] = Env.MemoryPictureNum[rnd3];
             Env.MemoryPictureNum[rnd3] = temp;
@@ -35,11 +35,11 @@ public class MemoryGameManager : UdonSharpBehaviour
     {
         if (Env.MemoryNew == true)
         {
-            int rnd1 = Random.Range(0, 6);
+            int rnd1 = Random.Range(2, 6);
             for (int j = 0; j < rnd1; j++)
             {
-                int rnd2 = Random.Range(0, 6);
-                int rnd3 = Random.Range(0, 6);
+                int rnd2 = Random.Range(0, Env.MemoryCardHowMany);
+                int rnd3 = Random.Range(0, Env.MemoryCardHowMany);
                 temp = Env.MemoryPictureNum[rnd2];
                 Env.MemoryPictureNum[rnd2] = Env.MemoryPictureNum[rnd3];
                 Env.MemoryPictureNum[rnd3] = temp;
@@ -55,7 +55,7 @@ public class MemoryGameManager : UdonSharpBehaviour
             Vector3 CardPosition = Env.CardPoint.transform.position;
             Instantiate(Env.MemoryGameCards, CardPosition, Quaternion.identity, Env.MemoryGame);
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < Env.MemoryCardHowMany / 2; i++)
             {
                 Env.MemoryCardAlive[i] = true;
             }

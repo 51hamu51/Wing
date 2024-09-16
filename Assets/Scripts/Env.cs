@@ -36,17 +36,25 @@ public class Env : UdonSharpBehaviour
     public int[] BowlingScoreAll = new int[22];
     public int BowlingOrder;
     public bool BowlingResetDestroy;
-    public bool[] MemoryCardAlive = new bool[2];
     public int MemoryCardFront;
     public bool MemoryFirst;
     public int MemoryPoint;
-    public Material[] MemoryMaterials = new Material[2];
+
     public Material MemoryDefaultMaterial;
     public GameObject MemoryGameCards;
     public GameObject CardPoint;
     public Transform MemoryGame;
     public TextMeshProUGUI MemoryScoreText;
     public bool MemoryNew;
+
+    /*カードの枚数増やすときは下の４つの数値を増やす*/
+    /*ここから*/
+    public bool[] MemoryCardAlive = new bool[3];
+    public Material[] MemoryMaterials = new Material[3];
+    public int MemoryCardHowMany = 6;
     public int[] MemoryPictureNum = new int[6];
+    /*ここまで*/
+
+
 
 }
