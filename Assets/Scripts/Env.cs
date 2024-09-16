@@ -21,6 +21,7 @@ public class Env : UdonSharpBehaviour
     public float ResetDistance = 3.0f;
     public float SweeperClearDistance = 3.0f;
     public float MemoryGameCardDistance = 2.0f;
+    public float MemoryGameClearDistance = 2.0f;
     public float KickerFieldDistance = 2.0f;
     public GameObject PINS;
     public Transform Sweeper;
@@ -44,5 +45,7 @@ public class Env : UdonSharpBehaviour
     public GameObject MemoryGameCards;
     public GameObject CardPoint;
     public Transform MemoryGame;
+    public TextMeshProUGUI MemoryScoreText;
+    public bool MemoryNew;
 
 }

@@ -15,6 +15,7 @@ public class MemoryGameCard : UdonSharpBehaviour
     {
         BeforeCard = false;
         BeforeCardFirst = false;
+        Debug.Log("resporn");
     }
     void Update()
     {
