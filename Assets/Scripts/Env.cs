@@ -47,5 +47,6 @@ public class Env : UdonSharpBehaviour
     public Transform MemoryGame;
     public TextMeshProUGUI MemoryScoreText;
     public bool MemoryNew;
+    public int[] MemoryPictureNum = new int[6];
 
 }
