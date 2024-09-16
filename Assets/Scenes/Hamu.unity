@@ -12116,8 +12116,7 @@ GameObject:
   - component: {fileID: 2076591695}
   - component: {fileID: 2076591694}
   m_Layer: 0
-  m_Name: "\u3053\u308C\u3092\u8907\u88FD\u3057\u3066QuizItem\u306B\u5165\u308C\u308B
-    (1)"
+  m_Name: "\u30DE\u30B9\u30B3\u30C3\u30C8"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12187,14 +12186,14 @@ MonoBehaviour:
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 2076591694}
   isShuffle: 1
-  title: 1+1=
+  title: "\u30AE\u30E9\u30F4\u30A1\u30F3\u30C4\u5317\u4E5D\u5DDE\u306E\u30DE\u30B9\u30B3\u30C3\u30C8\u306F\uFF1F"
   select:
-  - 2
-  - "\u7530"
-  - 3
-  - 7
-  answer_index: 0000000001000000
-  comment: "\u3053\u3093\u306B\u3061\u306F"
+  - "\u30AE\u30E9\u30F3"
+  - "\u30EC\u30CE\u4E38"
+  - "\u30B0\u30E9\u30F3\u30D1\u30B9\u304F\u3093"
+  - "\u30A2\u30D3\u30FC\u304F\u3093"
+  answer_index: 00000000
+  comment: "\u300C\u30BA\u30B0\u30ED\u30AB\u30E2\u30E1\u300D\u304C\u30E2\u30C1\u30FC\u30D5\u3089\u3057\u3044\u3067\u3059"
   score: 0
 --- !u!1 &2076945473
 GameObject:
@@ -17004,7 +17003,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &3570394576892783631
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
