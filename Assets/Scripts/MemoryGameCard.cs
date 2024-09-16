@@ -15,7 +15,6 @@ public class MemoryGameCard : UdonSharpBehaviour
     {
         BeforeCard = false;
         BeforeCardFirst = false;
-        Debug.Log("resporn");
     }
     void Update()
     {
@@ -23,7 +22,7 @@ public class MemoryGameCard : UdonSharpBehaviour
         GameObject obj = GameObject.Find("Environment");
         Env = obj.GetComponent<Env>();
 
-        if (Env.MemoryCardAlive[MemoryNum] == false)
+        if (Env.MemoryCardAlive[Env.MemoryPictureNum[MemoryNum]] == false)
         {
             Destroy(this.gameObject);
         }
@@ -66,29 +65,29 @@ public class MemoryGameCard : UdonSharpBehaviour
                     BeforeCard = true;
                     BeforeCardFirst = true;
 
-                    Env.MemoryCardFront = MemoryNum;
-                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[MemoryNum].color;
+                    Env.MemoryCardFront = Env.MemoryPictureNum[MemoryNum];
+                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]].color;
                     Env.MemoryFirst = false;
                     Debug.Log("1");
                 }
-                else if (Env.MemoryCardFront == MemoryNum)
+                else if (Env.MemoryCardFront == Env.MemoryPictureNum[MemoryNum])
                 {
                     Debug.Log("2");
                     BeforeCard = true;
                     Env.MemoryFirst = true;
                     Env.MemoryCardFront = -1;
-                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[MemoryNum].color;
+                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]].color;
                     Env.MemoryPoint++;
 
 
-                    Env.MemoryCardAlive[MemoryNum] = false;
+                    Env.MemoryCardAlive[Env.MemoryPictureNum[MemoryNum]] = false;
 
                 }
                 else
                 {
                     Debug.Log("3");
                     BeforeCard = true;
-                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[MemoryNum].color;
+                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]].color;
 
 
                     Env.MemoryFirst = true;

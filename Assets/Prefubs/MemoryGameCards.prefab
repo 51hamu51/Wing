@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8578065748235126008}
   - component: {fileID: 1471274633561318640}
   m_Layer: 0
-  m_Name: MemoryGameCard0 (1)
+  m_Name: MemoryGameCard3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 1471274633561318640}
-  MemoryNum: 0
+  MemoryNum: 3
 --- !u!114 &1471274633561318640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 2105738320896178594}
   - component: {fileID: 6454034455346702898}
   m_Layer: 0
-  m_Name: MemoryGameCard2 (1)
+  m_Name: MemoryGameCard5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6454034455346702898}
-  MemoryNum: 2
+  MemoryNum: 5
 --- !u!114 &6454034455346702898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,7 +647,7 @@ GameObject:
   - component: {fileID: 7836473152913831932}
   - component: {fileID: 6201388866781035203}
   m_Layer: 0
-  m_Name: MemoryGameCard1 (1)
+  m_Name: MemoryGameCard4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -763,7 +763,7 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: 6201388866781035203}
-  MemoryNum: 1
+  MemoryNum: 4
 --- !u!114 &6201388866781035203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,10 +980,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2745543527097048892}
-  - {fileID: 6907926179365856682}
   - {fileID: 8885075292134824922}
-  - {fileID: 5441615045561212435}
   - {fileID: 1127734462205946385}
+  - {fileID: 6907926179365856682}
+  - {fileID: 5441615045561212435}
   - {fileID: 257373744223093209}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1009,7 +1009,6 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes: []
   _udonSharpBackingUdonBehaviour: {fileID: -3240869100587252751}
-  Env: {fileID: 0}
 --- !u!114 &-3240869100587252751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1029,7 +1028,7 @@ MonoBehaviour:
   SynchronizePosition: 0
   AllowCollisionOwnershipTransfer: 0
   Reliable: 0
-  _syncMethod: 0
+  _syncMethod: 2
   serializedProgramAsset: {fileID: 11400000, guid: 7885a67ea8c501745a7d8aeab0ddcee8,
     type: 2}
   programSource: {fileID: 11400000, guid: bc210be3bbd882344bbf7d85abeaa336, type: 2}

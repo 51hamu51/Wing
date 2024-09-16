@@ -7,17 +7,47 @@ using VRC.Udon;
 public class MemoryGameManager : UdonSharpBehaviour
 {
     public Env Env;
+    private int temp;
     void Start()
     {
 
         Vector3 CardPosition = Env.CardPoint.transform.position;
         Instantiate(Env.MemoryGameCards, CardPosition, Quaternion.identity, Env.MemoryGame);
 
+        for (int i = 0; i < 6; i++)
+        {
+            Env.MemoryPictureNum[i] = i / 2;
+        }
+        int rnd1 = Random.Range(0, 6);
+        for (int j = 0; j < rnd1; j++)
+        {
+            int rnd2 = Random.Range(0, 6);
+            int rnd3 = Random.Range(0, 6);
+            temp = Env.MemoryPictureNum[rnd2];
+            Env.MemoryPictureNum[rnd2] = Env.MemoryPictureNum[rnd3];
+            Env.MemoryPictureNum[rnd3] = temp;
+        }
+
+
+
     }
     void Update()
     {
         if (Env.MemoryNew == true)
         {
+            int rnd1 = Random.Range(0, 6);
+            for (int j = 0; j < rnd1; j++)
+            {
+                int rnd2 = Random.Range(0, 6);
+                int rnd3 = Random.Range(0, 6);
+                temp = Env.MemoryPictureNum[rnd2];
+                Env.MemoryPictureNum[rnd2] = Env.MemoryPictureNum[rnd3];
+                Env.MemoryPictureNum[rnd3] = temp;
+            }
+
+
+
+
 
             Env.MemoryCardFront = -1;
             Env.MemoryFirst = true;
