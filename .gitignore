@@ -51,7 +51,6 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
-*.asset.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -71,4 +70,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-/[Aa]ssets/[Uu]don[Ss]harp/[Uu]tility[Ss]cripts/[Ss]ynced/*asset.meta
