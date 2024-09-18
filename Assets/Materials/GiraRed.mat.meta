@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SerializedUdonPrograms/edd367c38721ab94b86f1e66523d80e1.asset.meta
+guid: 9ab6e27f464f50f4da31f0daa788268a
+========
 guid: 741397a6985443c4b94a99327d37d084
+>>>>>>>> develop4:Assets/Materials/GiraRed.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
