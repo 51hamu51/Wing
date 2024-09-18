@@ -12,6 +12,17 @@ public class StruckBallReset : UdonSharpBehaviour
     {
 
     }
+    void Update()
+    {
+        Env Env;
+        GameObject obj = GameObject.Find("Environment");
+        Env = obj.GetComponent<Env>();
+        if (this.transform.position.y < Env.StruckBallDestHeight)
+        {
+            Env.StruckBallAlive = false;
+            Destroy(this.gameObject);
+        }
+    }
     public void OnCollisionEnter(Collision other)
     {
         Env Env;
