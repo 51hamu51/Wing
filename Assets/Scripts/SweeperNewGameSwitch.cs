@@ -17,6 +17,14 @@ public class SweeperNewGameSwitch : UdonSharpBehaviour
     }
     public override void Interact()
     {
-
+        // SwitchOn.SetActive(false);
+        //SwitchOff.SetActive(true);
+        Env.BowlingOrder = 0;
+        Env.BowlingScore = 0;
+        Env.BowlingResetDestroy = true;
+        for (int i = 0; i < 22; i++)
+        {
+            Env.BowlingScoreAll[i] = 0;
+        }
     }
 }
