@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SerializedUdonPrograms/fa85d0f39091f7340b2101b664f235f3.asset.meta
+guid: 5b06d099805f18c4d84939727b3fd1c1
+========
 guid: 5a217a345bff7204f923dab7ff2aea93
+>>>>>>>> develop4:Assets/Materials/Stadium.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
