@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: SweeperClearSwitch
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 4e80e663bd61d48fb97e717a4de8a988,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 2481f0e3d11a0b14a8776e59673022d8,
     type: 2}
   udonAssembly: 
   assemblyError: 
