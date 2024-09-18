@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.48396292, g: 0.5757421, b: 0.6802008, a: 1}
+  m_IndirectSpecularColor: {r: 0.48396298, g: 0.5757422, b: 0.6802008, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13473,6 +13473,7 @@ GameObject:
   - component: {fileID: 2866070080252977467}
   - component: {fileID: 4638153577247754970}
   - component: {fileID: 207743981374465874}
+  - component: {fileID: 4638153577247754971}
   m_Layer: 0
   m_Name: "\u30B4\u30FC\u30EB\u30DD\u30B9\u30C8(\u7DB2)"
   m_TagString: Untagged
@@ -48627,6 +48628,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595213010965485579}
+  m_Mesh: {fileID: 4300000, guid: a5d1d09621ed31448936ac43119e4e37, type: 2}
+--- !u!64 &4638153577247754971
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595213010965485579}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a5d1d09621ed31448936ac43119e4e37, type: 2}
 --- !u!114 &4646484710765149852
 MonoBehaviour:
