@@ -4166,7 +4166,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1095656726
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4746,7 +4746,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1250863002
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -26766,6 +26766,7 @@ GameObject:
   - component: {fileID: 6907217190113875363}
   - component: {fileID: 3798048449651828014}
   - component: {fileID: 1298100610923651938}
+  - component: {fileID: 6907217190113875364}
   m_Layer: 0
   m_Name: "\u5E73\u9762"
   m_TagString: Untagged
@@ -67332,6 +67333,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3284091837475618161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6907217190113875364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360519211374182346}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 0.0175668, z: 13.471207}
+  m_Center: {x: 0, y: -0.0016345754, z: 0.76439667}
 --- !u!114 &6909280500073836085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71577,6 +71599,7 @@ GameObject:
   - component: {fileID: 2015814120972115569}
   - component: {fileID: 8113131109800193788}
   - component: {fileID: 6206248993046243504}
+  - component: {fileID: 8113131109800193789}
   m_Layer: 0
   m_Name: "\u5E73\u9762"
   m_TagString: Untagged
@@ -82379,6 +82402,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7269089642161812504}
   m_Mesh: {fileID: 4300000, guid: 79b09d6074180b7439a3c19439fb9e53, type: 2}
+--- !u!65 &8113131109800193789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7269089642161812504}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15, y: 0.007148825, z: 13.471207}
+  m_Center: {x: 0, y: 0.0035744125, z: 0.7643969}
 --- !u!114 &8114248286610447233
 MonoBehaviour:
   m_ObjectHideFlags: 0
