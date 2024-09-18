@@ -56546,6 +56546,7 @@ GameObject:
   - component: {fileID: 7198039453282953961}
   - component: {fileID: 323354454407020808}
   - component: {fileID: 5098302650239888512}
+  - component: {fileID: 7198039453282953962}
   m_Layer: 0
   m_Name: "\u30B4\u30FC\u30EB\u30DD\u30B9\u30C8(\u7DB2)"
   m_TagString: Untagged
@@ -70943,6 +70944,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3284091837475618161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7198039453282953962
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503502266423710681}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a5d1d09621ed31448936ac43119e4e37, type: 2}
 --- !u!114 &7198617129535356990
 MonoBehaviour:
   m_ObjectHideFlags: 0
