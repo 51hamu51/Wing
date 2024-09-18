@@ -8,7 +8,7 @@ using VRC.Udon.Common;
 public class Ball_kick : UdonSharpBehaviour
 {
 
-    public Env Env;
+
     private bool SelectY = false;
     private bool SelectX = false;
     private bool Reseted = true;
