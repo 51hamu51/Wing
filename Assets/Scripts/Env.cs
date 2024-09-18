@@ -12,6 +12,7 @@ public class Env : UdonSharpBehaviour
     public string BBall = "BowlingBall";
     public string SBall = "FieldBall";
     public string FBall = "FieldBall";
+    public string FloorName;
     public float KickForce = 9.0f;
     public float KickForceUp = 5.0f;
     public float KickForceRotate = 3.0f;
@@ -54,6 +55,10 @@ public class Env : UdonSharpBehaviour
     public int MemoryCardHowMany = 6;
     public int[] MemoryPictureNum = new int[6];
     /*ここまで*/
+    public GameObject StruckBallPoint;
+    public GameObject StruckBall;
+    public Transform StruckOut;
+    public bool StruckBallAlive;
 
 
 
