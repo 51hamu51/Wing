@@ -30,7 +30,7 @@ public class MemoryGameCard : UdonSharpBehaviour
         if (Env.MemoryFirst == false && BeforeCard == false)
         {
 
-            GetComponent<Renderer>().material.color = Env.MemoryDefaultMaterial.color;
+            GetComponent<Renderer>().material = Env.MemoryDefaultMaterial;
 
         }
         if (Env.MemoryFirst == false && BeforeCardFirst == false)
@@ -66,7 +66,7 @@ public class MemoryGameCard : UdonSharpBehaviour
                     BeforeCardFirst = true;
 
                     Env.MemoryCardFront = Env.MemoryPictureNum[MemoryNum];
-                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]].color;
+                    GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
                     Env.MemoryFirst = false;
                     Debug.Log("1");
                 }
@@ -76,7 +76,7 @@ public class MemoryGameCard : UdonSharpBehaviour
                     BeforeCard = true;
                     Env.MemoryFirst = true;
                     Env.MemoryCardFront = -1;
-                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]].color;
+                    GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
                     Env.MemoryPoint++;
 
 
@@ -87,7 +87,7 @@ public class MemoryGameCard : UdonSharpBehaviour
                 {
                     Debug.Log("3");
                     BeforeCard = true;
-                    GetComponent<Renderer>().material.color = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]].color;
+                    GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
 
 
                     Env.MemoryFirst = true;
