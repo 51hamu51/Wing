@@ -44,58 +44,98 @@ public class MemoryGameCard : UdonSharpBehaviour
 
 
     }
-    public override void InputDrop(bool value, UdonInputEventArgs args)
+    public override void Interact()
     {
         Env Env;
         GameObject obj = GameObject.Find("Environment");
         Env = obj.GetComponent<Env>();
-        if (value)
+        if (Env.MemoryFirst == true)
         {
-            var playerPosition = Networking.LocalPlayer.GetPosition();
-            var differenceX = playerPosition.x - this.transform.position.x;
-            var differenceZ = playerPosition.z - this.transform.position.z;
-            if ((Env.MemoryGameCardDistance * -1) < differenceX && differenceX < Env.MemoryGameCardDistance && (Env.MemoryGameCardDistance * -1) < differenceZ && differenceZ < Env.MemoryGameCardDistance)
-            {
+            BeforeCard = true;
+            BeforeCardFirst = true;
+
+            Env.MemoryCardFront = Env.MemoryPictureNum[MemoryNum];
+            GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
+            Env.MemoryFirst = false;
+            Debug.Log("1");
+        }
+        else if (Env.MemoryCardFront == Env.MemoryPictureNum[MemoryNum])
+        {
+            Debug.Log("2");
+            BeforeCard = true;
+            Env.MemoryFirst = true;
+            Env.MemoryCardFront = -1;
+            GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
+            Env.MemoryPoint++;
 
 
+            Env.MemoryCardAlive[Env.MemoryPictureNum[MemoryNum]] = false;
 
-                base.InputDrop(value, args);
-                if (Env.MemoryFirst == true)
-                {
-                    BeforeCard = true;
-                    BeforeCardFirst = true;
-
-                    Env.MemoryCardFront = Env.MemoryPictureNum[MemoryNum];
-                    GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
-                    Env.MemoryFirst = false;
-                    Debug.Log("1");
-                }
-                else if (Env.MemoryCardFront == Env.MemoryPictureNum[MemoryNum])
-                {
-                    Debug.Log("2");
-                    BeforeCard = true;
-                    Env.MemoryFirst = true;
-                    Env.MemoryCardFront = -1;
-                    GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
-                    Env.MemoryPoint++;
+        }
+        else
+        {
+            Debug.Log("3");
+            BeforeCard = true;
+            GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
 
 
-                    Env.MemoryCardAlive[Env.MemoryPictureNum[MemoryNum]] = false;
+            Env.MemoryFirst = true;
+            Env.MemoryCardFront = -1;
 
-                }
-                else
-                {
-                    Debug.Log("3");
-                    BeforeCard = true;
-                    GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
-
-
-                    Env.MemoryFirst = true;
-                    Env.MemoryCardFront = -1;
-
-                }
-
-            }
         }
     }
+    /*  public override void InputDrop(bool value, UdonInputEventArgs args)
+     {
+         Env Env;
+         GameObject obj = GameObject.Find("Environment");
+         Env = obj.GetComponent<Env>();
+         if (value)
+         {
+             var playerPosition = Networking.LocalPlayer.GetPosition();
+             var differenceX = playerPosition.x - this.transform.position.x;
+             var differenceZ = playerPosition.z - this.transform.position.z;
+             if ((Env.MemoryGameCardDistance * -1) < differenceX && differenceX < Env.MemoryGameCardDistance && (Env.MemoryGameCardDistance * -1) < differenceZ && differenceZ < Env.MemoryGameCardDistance)
+             {
+
+
+
+                 base.InputDrop(value, args);
+                 if (Env.MemoryFirst == true)
+                 {
+                     BeforeCard = true;
+                     BeforeCardFirst = true;
+
+                     Env.MemoryCardFront = Env.MemoryPictureNum[MemoryNum];
+                     GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
+                     Env.MemoryFirst = false;
+                     Debug.Log("1");
+                 }
+                 else if (Env.MemoryCardFront == Env.MemoryPictureNum[MemoryNum])
+                 {
+                     Debug.Log("2");
+                     BeforeCard = true;
+                     Env.MemoryFirst = true;
+                     Env.MemoryCardFront = -1;
+                     GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
+                     Env.MemoryPoint++;
+
+
+                     Env.MemoryCardAlive[Env.MemoryPictureNum[MemoryNum]] = false;
+
+                 }
+                 else
+                 {
+                     Debug.Log("3");
+                     BeforeCard = true;
+                     GetComponent<Renderer>().material = Env.MemoryMaterials[Env.MemoryPictureNum[MemoryNum]];
+
+
+                     Env.MemoryFirst = true;
+                     Env.MemoryCardFront = -1;
+
+                 }
+
+             }
+         }
+     }*/
 }
