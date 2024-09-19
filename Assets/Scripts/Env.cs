@@ -60,6 +60,7 @@ public class Env : UdonSharpBehaviour
     public Transform StruckOut;
     public bool StruckBallAlive;
     public float StruckBallDestHeight = -3.0f;
+    public int[] Ank = new int[3];
 
 
 
