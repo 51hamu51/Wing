@@ -244,8 +244,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b23351c7474f7034ca3b49d5470a6053, type: 2}
   - {fileID: 2100000, guid: 4386f9447919bed43ab9248660c5fe70, type: 2}
   arrowYMaterials:
-  - {fileID: 2100000, guid: 120168ad176b70d459cda8c0a4f8db17, type: 2}
-  - {fileID: 2100000, guid: e4ca088745a283d4fa026d92fde35035, type: 2}
+  - {fileID: 2100000, guid: e0444c04e18a5174ebc5d7caeb7176d2, type: 2}
+  - {fileID: 2100000, guid: 4386f9447919bed43ab9248660c5fe70, type: 2}
 --- !u!114 &716339115906909602
 MonoBehaviour:
   m_ObjectHideFlags: 0
