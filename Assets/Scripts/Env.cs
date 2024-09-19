@@ -61,6 +61,10 @@ public class Env : UdonSharpBehaviour
     public bool StruckBallAlive;
     public float StruckBallDestHeight = -3.0f;
     public int[] Ank = new int[3];
+    public TextMeshProUGUI AnkSelectText;
+    public string[] AnkPre = new string[10];
+    public string[] AnkGene = new string[8];
+    public string[] AnkFeed = new string[6];
 
 
 
